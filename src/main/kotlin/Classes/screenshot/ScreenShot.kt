@@ -17,7 +17,7 @@ class ScreenShot(private val printStream: PrintStream) {
     }
 
     fun sendScreenshot(screenshot: BufferedImage,  dropboxPath: String) {
-        val uploader = DropboxUploader("sl.BwyyRwU-LZVyjNyMmyLRFVnBY7E_WBu7YQvF2MCMsbmmVdHj5iwFhFrxkdekcskkEgmP3ZaDMHJ9S3LmGBXSjGH-t1MwmVHmiH2I524MA24fP7JC-PvIS4rrImiIGY0UWlIY_1Ix1yKB")
+        val uploader = DropboxUploader("DropboxAPISecret")
 
         val baos = ByteArrayOutputStream()
         ImageIO.write(screenshot, "jpg", baos)
